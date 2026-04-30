@@ -1,0 +1,72 @@
+:root {
+  --bg: #050515;
+  --card: rgba(16, 16, 48, 0.7);
+  --line: #58f3f8;
+  --text: #f4fbff;
+  --accent: #a98bff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 20% 15%, #1e3f78, var(--bg) 45%);
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+}
+.bg-glow {
+  position: fixed;
+  width: 60vmax;
+  height: 60vmax;
+  border-radius: 50%;
+  filter: blur(70px);
+  background: linear-gradient(130deg, #58f3f8, #a98bff);
+  opacity: 0.25;
+  animation: float 8s ease-in-out infinite alternate;
+}
+@keyframes float { from { transform: translate(-8%, -8%); } to { transform: translate(10%, 8%); } }
+.app-shell {
+  width: min(980px, 95vw);
+  padding: 2rem;
+}
+.card {
+  backdrop-filter: blur(12px);
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px;
+  padding: 1.4rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,.4);
+}
+.question-top { display:flex; justify-content: space-between; align-items: center; gap:1rem; }
+.progress { flex:1; height:10px; background:#182050; border-radius: 99px; overflow:hidden; }
+.progress span { display:block; height:100%; width: 0%; background: linear-gradient(90deg, var(--line), var(--accent)); transition: width .35s ease; }
+.answers { display:grid; gap:.8rem; margin:1rem 0; }
+.answer {
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 12px;
+  padding: 1rem;
+  background: rgba(255,255,255,.04);
+  transition: transform .2s, border-color .2s;
+}
+.answer:hover, .answer:focus-visible { transform: translateX(6px); border-color: var(--line); outline: none; }
+.answer.selected { border-color: var(--accent); background: rgba(169,139,255,.2); }
+.next {
+  border: 0;
+  padding: .85rem 1.2rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg, var(--line), var(--accent));
+  color: #030310;
+  font-weight: 700;
+}
+.next:disabled { opacity: .45; }
+.bar-wrap { margin-bottom: .8rem; }
+.bar {
+  height: 12px;
+  border-radius: 99px;
+  background: #1a245a;
+  overflow: hidden;
+}
+.bar span { display:block; height:100%; background: linear-gradient(90deg,var(--line),var(--accent)); }
+@media (max-width: 768px) { .app-shell { padding: 1rem; } h1 { font-size: 1.6rem; } }

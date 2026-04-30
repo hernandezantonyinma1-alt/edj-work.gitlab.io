@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseMotion Surveys</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <main class="app-shell">
+    <header>
+      <p class="tag">Solución enterprise para agencias multinacionales</p>
+      <h1>Encuestas interactivas con Motion Graphics</h1>
+      <p class="subtitle">Diseñada para tablets, eventos globales y análisis en tiempo real.</p>
+    </header>
+
+    <section class="card question-card" id="questionCard">
+      <div class="question-top">
+        <span id="stepLabel">Pregunta 1 de 3</span>
+        <div class="progress"><span id="progressBar"></span></div>
+      </div>
+      <h2 id="questionText"></h2>
+      <div id="answers" class="answers"></div>
+      <button id="nextBtn" class="next" disabled>Siguiente</button>
+    </section>
+
+    <section class="card results" id="results" hidden>
+      <h2>Resultados de la sesión</h2>
+      <div id="charts"></div>
+      <button id="restartBtn" class="next">Reiniciar encuesta</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
