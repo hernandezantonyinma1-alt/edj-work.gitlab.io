@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseMotion Enterprise Survey Suite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <main class="layout">
+    <header class="hero card">
+      <p class="chip">AI + Motion + Analytics</p>
+      <h1>PulseMotion Enterprise Survey Suite</h1>
+      <p>Encuestas de alto nivel para agencias multinacionales: diseño inmersivo, datos en vivo y experiencia tablet-first.</p>
+      <div class="kpis">
+        <article><strong id="activeSessions">024</strong><span>Sesiones activas</span></article>
+        <article><strong id="avgCompletion">91%</strong><span>Finalización media</span></article>
+        <article><strong id="npsPulse">+72</strong><span>NPS Pulse</span></article>
+      </div>
+    </header>
+
+    <section class="workspace">
+      <article class="card survey" id="surveyCard">
+        <div class="survey-top">
+          <span id="stepLabel">Pregunta 1 de 5</span>
+          <div class="progress"><span id="progressBar"></span></div>
+          <span id="questionTimer">20s</span>
+        </div>
+        <h2 id="questionText"></h2>
+        <div id="answers" class="answers"></div>
+        <div class="controls">
+          <button id="prevBtn" class="btn ghost" disabled>Anterior</button>
+          <button id="nextBtn" class="btn" disabled>Siguiente</button>
+        </div>
+      </article>
+
+      <aside class="card panel">
+        <h3>Control en vivo</h3>
+        <label><span>Público objetivo</span><input id="audienceInput" placeholder="Ej: Retail LATAM" /></label>
+        <label><span>Meta de respuestas</span><input id="goalInput" type="number" value="1200" min="100" step="100" /></label>
+        <label><span>Modo visual</span>
+          <select id="themeMode">
+            <option value="aurora">Aurora</option>
+            <option value="night">Night Ops</option>
+            <option value="sunrise">Sunrise Pro</option>
+          </select>
+        </label>
+        <button id="simulateBtn" class="btn full">Simular 50 respuestas</button>
+        <div id="audienceTag" class="tag">Segmento: Global Premium</div>
+      </aside>
+    </section>
+
+    <section class="card results" id="results" hidden>
+      <h2>Dashboard de resultados</h2>
+      <div id="insights" class="insights"></div>
+      <div id="charts" class="charts"></div>
+      <div class="controls">
+        <button id="exportBtn" class="btn ghost">Exportar JSON</button>
+        <button id="restartBtn" class="btn">Nueva encuesta</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
